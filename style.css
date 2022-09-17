@@ -10,6 +10,7 @@ body{
 }
 .results{
 color: black;
+
 }
 .text{
     width: 50%;
@@ -27,6 +28,7 @@ h1:hover{
 }
 .btn{
     padding: 1rem 1.5rem;
+    background-color: cadetblue;
     border-radius: 10px;
     cursor: pointer;
     color: blue;
@@ -38,7 +40,9 @@ color: red;
 }
 .result{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     border: 2px solid red;
     width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }

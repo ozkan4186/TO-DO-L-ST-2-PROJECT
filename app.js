@@ -8,7 +8,8 @@ btn.addEventListener("click", () => {
     }else{
         results.innerHTML += `<div class="result">
       <i class="fa-regular fa-square"></i>
-      <p> ${text.value}</p>       
+      <p> ${text.value}</p>
+        <i class ="fa-solid fa-trash-can"></i>      
   </div>`;
   text.value=""
 
@@ -24,5 +25,8 @@ text.addEventListener("keydown",(e)=>{
         btn.click()
 
     }
+})
+results.addEventListener("click",()=>{
+    
 })
     
