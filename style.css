@@ -1,19 +1,44 @@
-.result{
-    background-color: white;
-}
-h1{
-    color:black
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
-    background-color: aqua;
+    text-align: center;
+    background-image: url(./img/kelly-sikkema--1_RZL8BGBM-unsplash.jpg);
+    background-size: cover;
+}
+.results{
+color: black;
 }
 .text{
     width: 50%;
     padding: 1rem;
-    font-size: 2rem;
+    border-radius: 10px;
+}
+h1{
+    font-size: 3rem;
+    color: chartreuse;
+    transition: color 0.5s;
+}
+h1:hover{
+    color: red;
+
 }
 .btn{
-    padding: 0.5rem 0.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 10px;
-    ba
+    cursor: pointer;
+    color: blue;
+    font-size: 0.8rem;
+}
+.btn:active{
+background-color: aqua;
+color: red;
+}
+.result{
+    display: flex;
+    justify-content:space-evenly;
+    border: 2px solid red;
+    width: 50%;
 }
