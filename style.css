@@ -13,9 +13,11 @@ color: black;
 
 }
 .text{
-    width: 37%;
-    padding: 1rem;
+    width: 55%;
+    padding: 1.2rem  1rem ;
     border-radius: 10px;
+    font-size: 2rem;
+    margin-bottom: 0rem;
 }
 h1{
     font-size: 3rem;
@@ -37,12 +39,14 @@ h1:hover{
     margin-top: 5rem;
 }
 .btn{
-    padding: 1rem 0.8rem;
+    padding: 1.8rem 1.2rem;
+    width: 8%;
     background-color: cadetblue;
     border-radius: 10px;
     cursor: pointer;
     color: blue;
-    font-size: 0.8rem;
+    font-size: 1rem;
+ 
 }
 .btn:active{
 background-color: aqua;
@@ -56,13 +60,33 @@ color: red;
     border: 2px solid red;
     line-height: 1rem;
     padding: 1rem 1rem;
-    border-radius: 10px;
-    width: 40%;
-    margin: 0 auto;
+    border-radius: 1rem;
+    width: 60%;
+    margin: 2rem auto;
     text-align: center;
     background-color: darkmagenta;
     cursor: pointer;
+     animation: result 2s ease-in-out;
+}
+.result:hover {
+    box-shadow: 1px 1px 7px 1px rgb(177, 94, 177);
+}
+@keyframes result{
+    50%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotateX(90deg);
+    }
 }
 .check  p{
     text-decoration: line-through;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+
 }

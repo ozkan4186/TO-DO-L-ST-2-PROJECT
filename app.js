@@ -2,6 +2,7 @@ const text = document.querySelector(".text");
 const btn = document.querySelector(".btn");
 const results = document.querySelector(".results");
 const fa=document.querySelector(".fa-square")
+const result=document.querySelector(".result")
 
 btn.addEventListener("click", () => {
     if(!text.value){
@@ -30,17 +31,21 @@ text.addEventListener("keydown",(e)=>{
 results.addEventListener("click",(e)=>{
     if(e.target.classList.contains("fa-square")){
         e.target.classList.remove("fa-square","fa-regular")
+          e.target.parentElement.style.backgroundColor = ` darkolivegreen`;
         e.target.classList.add("fa-solid","fa-check")
         e.target.parentElement.classList.add("check")
+        
 
 
     } else if (e.target.classList.contains("fa-check")){
         e.target.classList.remove("fa-solid", "fa-check")
          e.target.classList.add("fa-regular", "fa-square")
          e.target.parentElement.classList.remove("check")
+          e.target.parentElement.style.backgroundColor = `aqua`
 
     }else if(e.target.classList.contains("fa-sharp")){
         e.target.parentElement.remove()
+       
 
 
     }
