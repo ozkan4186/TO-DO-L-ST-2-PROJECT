@@ -13,7 +13,7 @@ color: black;
 
 }
 .text{
-    width: 50%;
+    width: 37%;
     padding: 1rem;
     border-radius: 10px;
 }
@@ -26,8 +26,18 @@ h1:hover{
     color: red;
 
 }
+.container{
+    border: 2px solid red;
+    border-radius: 15px;
+    width: 50%;
+    text-align: center;
+    background-image: url(./img/universe-2742113_1920.jpg);
+    background-size: cover;
+    margin:auto;
+    margin-top: 5rem;
+}
 .btn{
-    padding: 1rem 1.5rem;
+    padding: 1rem 0.8rem;
     background-color: cadetblue;
     border-radius: 10px;
     cursor: pointer;
@@ -40,9 +50,19 @@ color: red;
 }
 .result{
     display: flex;
+    color: blanchedalmond;
+    font-size: 2rem;
     justify-content:space-between;
     border: 2px solid red;
-    width: 50%;
+    line-height: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    width: 40%;
     margin: 0 auto;
     text-align: center;
+    background-color: darkmagenta;
+    cursor: pointer;
+}
+.check  p{
+    text-decoration: line-through;
 }
